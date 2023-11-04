@@ -6,7 +6,7 @@ from flask_migrate import Migrate
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///moringa.db'  
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://mitunda:rdGwIr1ykIR9Esxf8nm4XAogbY33mock@dpg-cl3bdv2uuipc738aol7g-a.oregon-postgres.render.com/moringa_uo8t'  
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False 
 migrate = Migrate(app, db)
 
