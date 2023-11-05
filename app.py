@@ -11,7 +11,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 migrate = Migrate(app, db)
 
 
-# db.init_app(app) 
+db.init_app(app) 
 
 #main api endpoint
 @app.route('/', methods=['GET'])
